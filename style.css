@@ -1,0 +1,384 @@
+body{
+    margin: 0;
+    padding: 0%;
+    background-color:  rgb(35, 41, 63);
+    font-size: 18px;
+    color: white;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    background-color:  rgb(35, 41, 63);
+    position: fixed;
+    width: 100%;
+}
+nav h1{
+    color: white;
+}
+.margin{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.menu_list{
+    margin-left: 40px;
+    color: rgb(218, 216, 216);
+    position: relative;
+    transition: color .7s;
+}
+.menu_list:hover::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    background-color: cyan;
+    height: 2px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+section img{
+    margin-top: 4.5em;
+}
+.welcome_msg{
+    margin-left: 20px;
+    margin-top: 7em;
+}
+.name{
+    color: white;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 80px;
+    animation: scale .5s forwards;
+}
+.welcome_msg h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cyan;
+    font-weight: 200;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+}
+.animate-up{
+    animation: fadeUp .5s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+.greet{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
+    color: lightcyan;
+    font-weight: 200;
+    margin-top: -15px;
+}
+.welcome_msg p{
+    width: 60%
+}
+#intro-desktop{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#coding{
+    position: relative;
+    right: 100px;
+    top: 60px;
+}
+button{
+    padding: 1em 1.4em;
+    font-size: 20px;
+    border-radius : 5px;
+    border: 1px solid cyan;
+    color: cyan;
+    text-transform: capitalize;
+    background-color: inherit;
+}
+.services{
+    /* background-color: rgb(240, 235, 227); */
+    padding-top: 5em;
+    height: 100vh;
+    color: white;
+}
+.services-list{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 15em 0em; */
+    /* text-align: center; */
+}
+.services-list p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: -10px;
+}
+.services-list h2{
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+}
+.service-web, .service-design, .service-app-dev{
+    width: 320px;
+}
+.portfolio{
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+.content{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.content img{
+    width: 500px;
+    height: auto;
+    box-shadow: 3px 5px 10px rgb(138, 137, 137);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)
+}
+.content img:hover{
+    transform: scale(1.1);
+}
+.card{
+    margin-top: -.5em;
+    background-color: rgb(172, 169, 169);
+    padding: 1em 2em;
+    border-radius: 5px;
+    width: 400px;
+    font-weight: lighter;
+    margin-left: 1em;
+}
+
+.content h3{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -0.1em;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.contact-form{
+    text-align: center;
+    margin-top: 7em;
+}
+input{
+    padding: 0.7em 6em;
+    margin: 10px auto;
+    display: block;
+    font-size: 18px;
+}
+textarea{
+    padding: 5em 10em;
+    margin-bottom: 20px;
+}
+.services-list svg{
+    width: 50px;
+    color: white;
+    background-color: rgb(84, 196, 211);
+    padding: 2em 3em;
+    border-radius: 20%;
+}
+#size{
+    width: 30px;
+    margin-top: -7px;
+}
+.modal-hide{
+    display: none;
+}
+.about h1 span, .portfolio span, .services span, .footer span{
+    color: cyan;
+    font-weight: 400;
+}
+.about img{
+    width: 370px;
+    box-shadow: 3px 3px 3px grey;
+}
+.content p, .portfolio p, .intro{
+    font-weight: 500;
+}
+.detail{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.info{
+    margin-right: 3em;
+}
+/* .profile_list{
+    display: flex;
+    justify-content: space-around;
+} */
+.skill_list, .edu{
+    display: none;
+}
+.footer{
+    text-align: center;
+    margin: 20px auto;
+}
+.footer-heading{
+    color: cyan;
+}
+.footer p{
+    width: 40%;
+    margin: 0 auto;
+}
+.hvr-underline-from-left::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    right: 100%;
+    bottom: 0px;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background: rgb(32, 152, 209);
+}
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+}
+.fa-twitter, .fa-facebook, .fa-github{
+    width: 30px;
+    color:  rgb(32, 152, 209);
+    margin-left: 40px;
+}
+.text-center{
+    text-align: center;
+    margin-top: 3em;
+    font-weight: 400;
+}
+.text-center span{
+    color: rgb(32, 152, 209);
+}
+.primary{
+    border-color: hotpink !important;
+}
+
+[aos="fade"]{
+    opacity: 0;
+    transition-property: opacity;
+}
+[aos="fade"].aos-animate{
+    opacity: 1;
+}
+@media only screen and (max-width:650px){
+    nav h1{
+        font-size: 18px;
+    }
+    .menu{
+        display: none;
+    }
+    .margin{
+        margin: 0px 1em;
+    }
+    .welcome_msg{
+        margin-top:3.7em;
+    }
+    .welcome_msg h2{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .greet{
+        font-size: 16px;
+    }
+    .animate-up{
+        margin-top: 4em;
+        font-size: 16px;
+        width: 530px;
+    }
+    .services-list{
+        display: block;
+        margin-left: 6em;
+        position: initial;
+    }
+    .about{
+        position: initial;
+    }
+    .detail{
+        display: block;
+    }
+    .detail p{
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 80%;
+    }
+    .container{
+        display: block;
+    }
+    .content img, .card{
+        width: 90%;
+    }
+    .card{
+        margin-left: 2px;
+    }
+    /* .animate-right img{
+        position: initial;
+    } */
+    /* .welcome_msg{
+        margin-top: 6em;
+    }
+    .welcome_msg h1, .welcome_msg h2{
+        font-size: 20px;
+    }
+    .welcome_msg button{
+        padding: 1em 2em;
+        font-size: 16px;
+        margin-top: 2em;
+    }
+    
+    input{
+        padding: 1em 4em;
+    }
+    textarea{
+        padding: 3em 6em;
+    }
+     */
+}
+
+@keyframes fadeUp{
+    0%{
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
